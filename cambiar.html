@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
-    <link rel="stylesheet" href="styles.css">
-    <title>Cambiar Contraseña</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  <link rel="stylesheet" href="styles.css">
+  <title>Cambiar Contraseña</title>
 </head>
 <body>
-    <main class="container">
-        <form action="/cambiar" method="POST">
-            <h1>Cambiar Contraseña</h1>
-            <div class="input-box">
-                <input placeholder="Contraseña actual" type="password" required>
-                <i class="bx bxs-lock"></i>
-            </div>
-            <div class="input-box">
-                <input placeholder="Nueva contraseña" type="password" required>
-                <i class="bx bxs-lock-alt"></i>
-            </div>
-            <div class="input-box">
-                <input placeholder="Confirmar nueva contraseña" type="password" required>
-                <i class="bx bxs-lock-alt"></i>
-            </div>
-            <button type="submit" class="login">Actualizar</button>
-            <div class="register-link">
-                <p><a href="index.html">Volver al login</a></p>
-            </div>
-        </form>
-    </main>
+  <main class="container">
+    <form id="formCambiar" action="#">
+      <h1>Cambiar Contraseña</h1>
+
+      <div class="input-box">
+        <input placeholder="Contraseña actual" type="password" id="oldPass" required>
+        <i class="bx bxs-lock"></i>
+        <i class="bx bxs-hide toggle-pass"></i>
+      </div>
+
+      <div class="input-box">
+        <input placeholder="Nueva contraseña" type="password" id="new1" required>
+        <i class="bx bxs-lock-alt"></i>
+        <i class="bx bxs-hide toggle-pass"></i>
+      </div>
+
+      <div class="input-box">
+        <input placeholder="Confirmar nueva contraseña" type="password" id="new2" required>
+        <i class="bx bxs-lock-alt"></i>
+        <i class="bx bxs-hide toggle-pass"></i>
+      </div>
+
+      <button type="submit" class="login">Actualizar</button>
+      <div class="register-link">
+        <p><a href="index.html">Volver al login</a></p>
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

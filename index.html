@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
-    <link rel="stylesheet" href="styles.css">
-    <title>José Pardinho</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  <link rel="stylesheet" href="styles.css">
+  <title>José Pardinho</title>
 </head>
 <body>
-    <main class="container">
-        
-        <form action="/login" method="POST">
-            <h1>Login Pardinho</h1>
-            <div class="input-box">
-                <input placeholder="Usuario" type="email" id="username" required>
-                <i class="bx bxs-user"></i>
-            </div>
-            <div class="input-box">
-                <input placeholder="Contraseña" type="password" id="password" required>
-                <i class="bx bxs-lock-alt"></i>
-            </div>
-            <div class="remember-forgot">
-                <label>
-                    <input type="checkbox"> Recordar mi Contraseña
-                </label>
-                <a href="recuperar.html">Olvidé mi Contraseña</a>
-            </div>
-            <button type="submit" class="login">Login</button>
+  <main class="container">
+    <form id="formLogin" action="#">
+      <h1>Login Pardinho</h1>
 
-            <!-- Login social -->
-            <div class="social-login">
-                <p>Encuéntranos en:</p>
-                <div class="social-icons">
-                    <a href="https://www.jpardo.edu.pe/"><i class='bx bxl-google'></i></a>
-                    <a href="https://www.facebook.com/JosePardo.Oficial/"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://github.com/LaguchoDeveloper/"><i class='bx bxl-github'></i></a>
-                </div>
-            </div>
+      <div class="input-box">
+        <input placeholder="Usuario" type="email" id="username" required>
+        <i class="bx bxs-user"></i>
+      </div>
+      <div class="input-box">
+        <input placeholder="Contraseña" type="password" id="password" required>
+        <i class="bx bxs-lock-alt"></i>
+        <i class="bx bxs-hide toggle-pass"></i>
+      </div>
+      <div class="remember-forgot">
+        <label>
+            <input type="checkbox"> Recordar mi Contraseña
+        </label>
+        <div>
+          <a href="recuperar.html">Olvidé mi Contraseña</a>
+          <a href="cambiar.html">Cambiar Contraseña</a>
+        </div>
+      </div>
+      <button type="submit" class="login">Login</button>
 
-            <div class="register-link">
-                <p>¿No tiene cuenta?
-                    <a href="registro.html">Regístrese Aquí</a>
-                </p>
-            </div>
-        </form>
-    </main>
+      <div class="social-login">
+        <p>Encuéntranos en:</p>
+        <div class="social-icons">
+          <a href="https://www.jpardo.edu.pe/"><i class='bx bxl-google'></i></a>
+          <a href="https://www.facebook.com/JosePardo.Oficial/"><i class='bx bxl-facebook'></i></a>
+          <a href="https://github.com/LaguchoDeveloper/"><i class='bx bxl-github'></i></a>
+        </div>
+      </div>
+
+      <div class="register-link">
+        <p>¿No tiene cuenta? 
+            <a href="registro.html">Regístrese Aquí</a>
+        </p>
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

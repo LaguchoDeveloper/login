@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
-    <link rel="stylesheet" href="styles.css">
-    <title>Registro Pardinho</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  <link rel="stylesheet" href="styles.css">
+  <title>Registro Pardinho</title>
 </head>
 <body>
-    <main class="container">
-        <form action="/registro" method="POST">
-            <h1>Registro</h1>
-            <div class="input-box">
-                <input placeholder="Nombre completo" type="text" required>
-                <i class="bx bxs-user"></i>
-            </div>
-            <div class="input-box">
-                <input placeholder="Correo" type="email" required>
-                <i class="bx bxs-envelope"></i>
-            </div>
-            <div class="input-box">
-                <input placeholder="Contraseña" type="password" required>
-                <i class="bx bxs-lock-alt"></i>
-            </div>
-            <div class="input-box">
-                <input placeholder="Confirmar contraseña" type="password" required>
-                <i class="bx bxs-lock"></i>
-            </div>
-            <button type="submit" class="login">Registrar</button>
-            <div class="register-link">
-                <p>¿Ya tienes cuenta?
-                    <a href="index.html">Inicia sesión</a>
-                </p>
-            </div>
-        </form>
-    </main>
+  <main class="container">
+    <form id="formRegistro" action="#">
+      <h1>Registro</h1>
+      <div class="input-box">
+        <input placeholder="Nombre completo" type="text" required>
+        <i class="bx bxs-user"></i>
+      </div>
+      <div class="input-box">
+        <input placeholder="Correo" type="email" required>
+        <i class="bx bxs-envelope"></i>
+      </div>
+      <div class="input-box">
+        <input placeholder="Contraseña" type="password" id="pass1" required>
+        <i class="bx bxs-lock-alt"></i>
+        <i class="bx bxs-hide toggle-pass"></i>
+      </div>
+      <div class="input-box">
+        <input placeholder="Confirmar contraseña" type="password" id="pass2" required>
+        <i class="bx bxs-lock"></i>
+        <i class="bx bxs-hide toggle-pass"></i>
+      </div>
+      <button type="submit" class="login">Registrar</button>
+      <div class="register-link">
+        <p>¿Ya tienes cuenta?
+          <a href="index.html">Inicia sesión</a>
+        </p>
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
