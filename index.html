@@ -13,30 +13,37 @@
         <form action="/login" method="POST">
             <h1>Login Pardinho</h1>
             <div class="input-box">
-                <input placeholder="Usuario" type="email" id="username">
+                <input placeholder="Usuario" type="email" id="username" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input placeholder="Contraseña" type="password" id="password">
+                <input placeholder="Contraseña" type="password" id="password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
             <div class="remember-forgot">
                 <label>
-                    <input type="checkbox">
-                    Recorcar mi Contraseña
+                    <input type="checkbox"> Recordar mi Contraseña
                 </label>
-                <a href="">Olvidé mi Contraseña</a>
-                
+                <a href="recuperar.html">Olvidé mi Contraseña</a>
             </div>
             <button type="submit" class="login">Login</button>
+
+            <!-- Login social -->
+            <div class="social-login">
+                <p>O inicia con:</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
             <div class="register-link">
                 <p>¿No tiene cuenta?
-                    <a href="#">Registrese Aquí</a>
+                    <a href="registro.html">Regístrese Aquí</a>
                 </p>
             </div>
-                
         </form>
-
     </main>
 </body>
 </html>
